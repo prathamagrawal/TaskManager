@@ -12,3 +12,10 @@ Setup Docker
 ```
 docker-compose-up --build
 ```
+
+
+
+starting a node server
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
