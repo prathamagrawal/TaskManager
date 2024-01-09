@@ -1,5 +1,14 @@
 version: '3'
 services:
+  db:
+    image: 'mysql:latest'
+    environment:
+      MYSQL_ROOT_PASSWORD: 'localhost'
+    ports: 
+      - '3906:3306'
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    command: --default-authentication-plugin=mysql_native_password
   frontend:
     build:
       context: ./frontend

@@ -19,3 +19,9 @@ starting a node server
 ```
 export NODE_OPTIONS=--openssl-legacy-provider
 ```
+
+
+
+```
+docker-compose up -d
+```
